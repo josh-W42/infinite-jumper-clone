@@ -132,6 +132,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 100
 script = ExtResource("1_dmpls")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
