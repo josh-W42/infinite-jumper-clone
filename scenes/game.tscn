@@ -9,19 +9,22 @@
 script = ExtResource("1_kxlwk")
 
 [node name="Platform" parent="." instance=ExtResource("2_n60dm")]
-position = Vector2(0, 664)
+position = Vector2(3, 835)
 
 [node name="Platform4" parent="." instance=ExtResource("2_n60dm")]
-position = Vector2(350, 481)
+position = Vector2(353, 652)
 
 [node name="Platform5" parent="." instance=ExtResource("2_n60dm")]
-position = Vector2(0, 302)
+position = Vector2(3, 473)
 
 [node name="Platform2" parent="." instance=ExtResource("2_n60dm")]
-position = Vector2(192, 663)
+position = Vector2(279, 836)
 
 [node name="Platform3" parent="." instance=ExtResource("2_n60dm")]
-position = Vector2(378, 663)
+position = Vector2(408, 837)
+
+[node name="Platform6" parent="." instance=ExtResource("2_n60dm")]
+position = Vector2(142, 837)
 
 [node name="Player" parent="." instance=ExtResource("2_3537w")]
 position = Vector2(259, 623)
