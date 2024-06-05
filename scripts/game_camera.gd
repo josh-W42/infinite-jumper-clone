@@ -10,26 +10,26 @@ var viewport_size: Vector2;
 
 func _ready() -> void:
 	viewport_size = get_viewport_rect().size
-	global_position.x = viewport_size.x / 2
+	global_position.x = viewport_size.x / 2.0
 	
-	limit_bottom = viewport_size.y
+	limit_bottom = int(viewport_size.y)
 	limit_left = 0
-	limit_right = viewport_size.x
+	limit_right = int(viewport_size.x)
 	
 	position_destroyer()
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if player:
 		var limit_offset = 420
 		if limit_bottom > player.global_position.y + limit_offset:
-			limit_bottom = player.global_position.y + limit_offset
+			limit_bottom = int(player.global_position.y + limit_offset)
 	
 	var overlapping_areas = destroyer.get_overlapping_areas()
 	for area in overlapping_areas:
 		if area is Platform:
 			area.queue_free()
 	
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if player != null:
 		global_position.y = player.global_position.y
 	

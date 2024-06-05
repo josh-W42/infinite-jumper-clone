@@ -46,8 +46,8 @@ tracks/2/keys = {
 "values": [Vector2(0.35, 0.35)]
 }
 
-[sub_resource type="Animation" id="Animation_e6e6s"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_al8hn"]
+resource_name = "Jump"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -58,7 +58,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_ehvvl")]
+"values": [ExtResource("2_kpr7h")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -85,8 +85,8 @@ tracks/2/keys = {
 "values": [Vector2(0.35, 0.35)]
 }
 
-[sub_resource type="Animation" id="Animation_al8hn"]
-resource_name = "Jump"
+[sub_resource type="Animation" id="Animation_e6e6s"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -97,7 +97,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_kpr7h")]
+"values": [ExtResource("1_ehvvl")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false

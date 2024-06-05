@@ -15,7 +15,7 @@ func _ready() -> void:
 	viewport_rect = get_viewport_rect().size
 	
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if velocity.y > 0 && animator.current_animation != "Fall":
 		animator.play("Fall")
 	elif velocity.y < 0 && animator.current_animation != "Jump":
