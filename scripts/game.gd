@@ -70,8 +70,8 @@ func get_parallax_spite_scale(sprite: Sprite2D) -> Vector2:
 	var texture = sprite.get_texture()
 	var texture_width = texture.get_width()
 	
-	var scale = viewport_size.x / texture_width
-	var result = Vector2(scale, scale)
+	var sprite_scale = viewport_size.x / texture_width
+	var result = Vector2(sprite_scale, sprite_scale)
 	return result
 	
 	
