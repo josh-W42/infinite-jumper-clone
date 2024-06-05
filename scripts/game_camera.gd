@@ -41,7 +41,7 @@ func position_destroyer() -> void:
 	destroyer.position.y = viewport_size.y / 2
 	
 	var rect_shape: RectangleShape2D = RectangleShape2D.new()
-	var rect_shape_size: Vector2 = Vector2(viewport_size.x, 200)
+	var rect_shape_size: Vector2 = Vector2(viewport_size.x, 50)
 	rect_shape.set_size(rect_shape_size)
 	destroyer_collision.shape = rect_shape
 
