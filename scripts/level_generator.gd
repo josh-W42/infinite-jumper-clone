@@ -24,7 +24,7 @@ func _process(_delta: float) -> void:
 	if player:
 		var py = player.global_position.y
 		var end_of_level_y_position = start_platform_y - (generated_platform_count *  y_distance_between_platforms)
-		var threshold = end_of_level_y_position
+		var threshold = end_of_level_y_position - player.position.y
 		if  py <= threshold:
 			generate_level(end_of_level_y_position, false)
 
